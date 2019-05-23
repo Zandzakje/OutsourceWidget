@@ -1,0 +1,121 @@
+﻿body {
+    background-color: #d1d1d1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #333333;
+    overflow-x: hidden;
+    transition: .2s;
+    padding-top: 60px;
+}
+
+    .sidenav a {
+        text-decoration: none;
+        font-size: 25px;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 36px;
+        color: white;
+        padding: 0px 8px 8px 8px;
+    }
+
+    .sidenav h2 {
+        margin-top: -20px;
+        color: white;
+        text-align: center;
+    }
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+/*Notification Button*/
+
+.notification {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-top: 25px;
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    border-radius: 60px;
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+    .notification:hover {
+        background: #ff0000;
+        color: white;
+        text-decoration: none;
+    }
+
+    .notification .badge {
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        padding: 5px 10px;
+        border-radius: 2px;
+        background: #b50000;
+        color: white;
+    }
+
+    .notification .icon {
+        height: 30px;
+        right: 50px;
+    }
+
+.message-box {
+    background-color: white;
+    width: 242px;
+    margin: 8px 4px 4px 4px;
+    padding: 8px;
+    height: 75px;
+    border-radius: 2px;
+    border-left: 12px solid red;
+}
+
+.message-text {
+    float: left;
+    width: 75%;
+}
+
+    .message-text p {
+        font-size: 12px;
+    }
+
+    .message-text a {
+        font-size: 12px;
+    }
+
+.message-img {
+    float: right;
+    width: 25%;
+}
+
+    .message-img img {
+        margin-top: 10px;
+        float: right;
+        height: 38px;
+        width: 38px;
+    }
